@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinGenie - Financial Literacy for Young Minds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <section id="login-section" class="auth-section">
+            <div class="logo">
+                <img src="images\FinGenie_Logo.png" alt="FinGenie Logo">
+            </div>
+            <h2>Welcome to FinGenie</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" id="login-email" placeholder="Email or Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="switch-auth">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </form>
+        </section>
+
+        <!-- Signup Section -->
+        <section id="signup-section" class="auth-section hidden">
+            <div class="logo">
+                <img src="images\FinGenie_Logo.png" alt="FinGenie Logo">
+            </div>
+            <h2>Create Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="text" id="signup-username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="signup-age" placeholder="Age" min="8" max="18" required>
+                </div>
+                <div class="form-group">
+                    <select id="signup-gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="signup-role" required>
+                        <option value="">Select Role</option>
+                        <option value="parent">Parent</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Sign Up</button>
+                <p class="switch-auth">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </section>
+
+        <!-- Home Section -->
+        <section id="home-section" class="hidden">
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="images\FinGenie_Logo.png" alt="FinGenie Logo">
+                    <span class="logo-text">FinGenie</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+            </nav>
+
+            <div class="hero-section">
+                <h1>Where Young Minds Master Money</h1>
+                <p>Empowering the next generation with financial wisdom</p>
+                <button class="btn-primary" id="get-started">Get Started</button>
+            </div>
+
+            <div class="features-section">
+                <h2>Why FinGenie?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>AI-Chatbot</h3>
+                        <p>Interactive learning with our friendly AI assistant</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Gamified Learning</h3>
+                        <p>Learn finance through fun games and challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your financial learning journey</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Daily Streaks</h3>
+                        <p>Build consistent learning habits</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lessons-section hidden" id="lessons-container">
+                <h2>Financial Lessons</h2>
+                <div class="age-groups">
+                    <div class="age-group">
+                        <h3>Ages 8-10</h3>
+                        <div class="lessons-list">
+                            <div class="lesson-card">
+                                <h4>Introduction to Money</h4>
+                                <p>Learn about coins, bills, and basic money concepts</p>
+                            </div>
+                            <div class="lesson-card">
+                                <h4>Basic Saving</h4>
+                                <p>Understanding the importance of saving money</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="age-group">
+                        <h3>Ages 11-14</h3>
+                        <div class="lessons-list">
+                            <div class="lesson-card">
+                                <h4>Budgeting Basics</h4>
+                                <p>Learn to create and manage a simple budget</p>
+                            </div>
+                            <div class="lesson-card">
+                                <h4>Smart Spending</h4>
+                                <p>Making wise purchasing decisions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="age-group">
+                        <h3>Ages 15-18</h3>
+                        <div class="lessons-list">
+                            <div class="lesson-card">
+                                <h4>Investment Basics</h4>
+                                <p>Introduction to stocks, bonds, and investments</p>
+                            </div>
+                            <div class="lesson-card">
+                                <h4>Financial Planning</h4>
+                                <p>Planning for future financial goals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
