@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinGenie - Financial Literacy for Young Minds</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -154,6 +154,25 @@
             </div>
         </section>
     </div>
+    <!-- Genie Chatbot Floating Button and Chat Window -->
+    <div id="genie-chatbot-container">
+        <img src="images/Genie Mascot.png" id="genie-mascot" alt="Genie Mascot" />
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                <span>FinGenie Assistant</span>
+                <button id="close-chatbot">&times;</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <form id="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Ask me anything about finance..." autocomplete="off" required />
+                <button type="submit">Send</button>
+            </form>
+            <img src="images/Genie Mascot.png" id="chatbot-floating-mascot" alt="Genie Mascot" />
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2024 FinGenie. All rights reserved. | <a href="#about" style="color: #00B8A9; text-decoration: none;">About</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html> 
